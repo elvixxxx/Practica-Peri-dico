@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Noticia - EL COMERCIO</title>
+</head>
+<body>
+
+    <header style="text-align: center;">
+        <h1>Periódico EL COMERCIO</h1>
+        <p>Mesa de Redacción Digital</p>
+        <nav>
+            <a href="/index.html">Inicio</a> | 
+            <a href="/pages/NOTICIAS.html">Noticias</a> | 
+            <a href="formulario.html">Formulario (Registrar Noticia)</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Formulario (Registrar Nueva Noticia)</h2>
+            <p>Ingrese los datos solicitados para enviar una nueva noticia al sistema editorial:</p>
+
+            <form action="FORMULARIO.html" method="get" onsubmit="alert('¡Noticia enviada y registrada con éxito!')">
+                <label for="titular">1. Titular de la noticia:</label><br>
+                <input type="text" id="titular" name="titular" required><br><br>
+
+                <label for="seccion">2. Sección del periódico:</label><br>
+                <select id="seccion" name="seccion" required>
+                    <option value="">Seleccione una sección</option>
+                    <option value="actualidad">Actualidad</option>
+                    <option value="economia">Economía</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="tendencias">Tendencias</option>
+                    <option value="internacional">Internacional</option>
+                </select><br><br>
+
+                <label for="autor">3. Nombre del periodista / redactor:</label><br>
+                <input type="text" id="autor" name="autor" required><br><br>
+
+                <label for="correo">4. Correo institucional del redactor:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="fecha">5. Fecha de publicación:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+
+                <label for="contenido">6. Cuerpo de la noticia:</label><br>
+                <textarea id="contenido" name="contenido" rows="6" cols="45" required></textarea><br><br>
+
+                <label for="imagen">7. Imagen de la noticia:</label><br>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+
+                <button type="submit">Guardar Noticia</button>
+                <button type="reset">Limpiar Campos</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer style="text-align: center;">
+        <p>© 2026 DIARIO EL COMERCIO</p>
+        <p>Quito-Ecuador | Redacción Central</p>
+    </footer>
+
+</body>
+</html>
